@@ -3,8 +3,21 @@ html, body {
   padding: 0;
 }
 
+p{
+  margin: 0;
+}
+@font-face {
+  font-family: BebasNeueBook;
+  src: url(./fonts/BebasNeue_Book.otf);
+}
+
+@font-face {
+  font-family: BebasNeueBookBold;
+  src: url(./fonts/BebasNeue_Bold.otf);
+}
+
 .header-container {
-  background-color: black;
+  background-color: #1E1E1E;
   width: 100%;
   height: 60px;
   padding: 0;
@@ -16,9 +29,11 @@ html, body {
   padding-right: 20px;
   padding-bottom: 10px;
   padding-left: 20px;
-  width: 100%;
   display: flex;
   justify-content: space-between;
+  max-width: 1340px;
+  vertical-align: baseline;
+  margin: auto;
 }
 
 .header-nav {
@@ -36,13 +51,15 @@ html, body {
   width: 125px;
   height: 100%;
   float: left;
-
 }
 
 .header-logo {
   display: block;
   width: 125px;
   height: 40px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 
 .header-item {
@@ -71,5 +88,98 @@ html, body {
   border-bottom-width: 2px;
   border-bottom-style: solid;
   border-bottom-color: transparent;
-  font-family: 'Bebas Neue Book';
+  font-family: BebasNeueBook;
+  letter-spacing: 2px;
+}
+
+.body-container {
+}
+
+.banner-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  height: 60vh;
+  max-height: 550px;
+  border: 0;
+  margin: 0;
+  padding: 0;
+  vertical-align: baseline;
+  box-sizing: border-box;
+}
+
+.banner-text-container {
+  position: relative;
+  width: 100%;
+  color: #ffffff;
+  vertical-align: baseline;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+}
+
+.banner-text {
+  font-family: BebasNeueBook;
+  font-size: 80px;
+  letter-spacing: 15px;
+  margin-left: 50px;
+}
+
+.banner-img {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #1E1E1E;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.culture-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  height: 80vh;
+  max-height: 700px;
+  border: 0;
+  margin: 0;
+  padding-top: 100px;
+  padding-left: 0;
+  padding-right: 0;
+  padding-bottom: 0;
+  vertical-align: baseline;
+  box-sizing: border-box;
+  background-color: #1E1E1E;
+}
+
+.culture-text-container {
+  float: left;
+  color: #ffffff;
+  width: 50%;
+  height: 100%;
+}
+
+.culture-text {
+  font-family: BebasNeueBook;
+  font-size: 80px;
+  letter-spacing: 15px;
+  margin-left: 50px;
+}
+
+.culture-image-container {
+  float: right;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-color: #1E1E1E;
+  height: 100%;
+  width: 40%;
+  display: block;
 }
