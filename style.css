@@ -58,7 +58,7 @@ a.body-link:active {
 p.body, ul {
   color: white;
   font-family: SourceSansPro;
-  font-size: 14px;
+  font-size: 20px;
   letter-spacing: 2px;
   line-spacing: 0.5em;
   margin-left: 50px;
@@ -204,8 +204,7 @@ ul {
   position: relative;
   display: flex;
   align-items: center;
-  height: 80vh;
-  max-height: 700px;
+  height: 50em;
   border: 0;
   margin: auto;
   padding-top: 50px;
@@ -241,8 +240,7 @@ ul {
   position: relative;
   display: flex;
   align-items: center;
-  height: 80vh;
-  max-height: 700px;
+  height: 50em;
   border: 0;
   margin: auto;
   padding-top: 50px;
@@ -276,8 +274,7 @@ ul {
   position: relative;
   display: flex;
   align-items: center;
-  height: 80vh;
-  max-height: 700px;
+  height: 50em;
   border: 0;
   margin: auto;
   padding-top: 50px;
@@ -308,8 +305,7 @@ ul {
 .related-content-container {
   position: relative;
   display: block;
-  height: 80vh;
-  max-height: 700px;
+  height: 50em;
   border: 0;
   margin: auto;
   padding-top: 50px;
