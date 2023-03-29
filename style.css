@@ -208,7 +208,7 @@ ul {
   max-height: 700px;
   border: 0;
   margin: auto;
-  padding-top: 100px;
+  padding-top: 50px;
   padding-left: 0;
   padding-right: 0;
   padding-bottom: 0;
@@ -245,7 +245,7 @@ ul {
   max-height: 700px;
   border: 0;
   margin: auto;
-  padding-top: 100px;
+  padding-top: 50px;
   padding-left: 0;
   padding-right: 0;
   padding-bottom: 0;
@@ -280,7 +280,7 @@ ul {
   max-height: 700px;
   border: 0;
   margin: auto;
-  padding-top: 100px;
+  padding-top: 50px;
   padding-left: 0;
   padding-right: 0;
   padding-bottom: 0;
@@ -312,7 +312,7 @@ ul {
   max-height: 700px;
   border: 0;
   margin: auto;
-  padding-top: 100px;
+  padding-top: 50px;
   padding-left: 0;
   padding-right: 0;
   padding-bottom: 0;
@@ -342,7 +342,7 @@ ul {
 h4.related-content-text::after {
   content: "";
   position: absolute;
-  top: 114px;
+  top: 62px;
   left: 325px;
   width: 1500px;
   border-top-width: 1px;
