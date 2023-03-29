@@ -1,11 +1,45 @@
 html, body {
   margin: 0;
   padding: 0;
+  background-color: #121212;
 }
 
-p{
+h1 {
+  color: white;
+  font-family: BebasNeueBook;
+  font-size: 60px;
+  letter-spacing: 15px;
+  margin-left: 50px;
+  margin-bottom: 10px;
+}
+
+h4 {
+  color: #808285;
+  font-family: BebasNeueBookBold;
+  font-size: 28px;
+  letter-spacing: 4px;
+}
+
+p {
   margin: 0;
 }
+
+a.body-link:link {
+  color: #AAAAAA;
+}
+
+a.body-link:visited {
+  color: #888888;
+}
+
+a.body-link:hover {
+  color: #666666;
+}
+
+a.body-link:active {
+  color: #FFFFFF;
+}
+
 @font-face {
   font-family: BebasNeueBook;
   src: url(./fonts/BebasNeue_Book.otf);
@@ -16,28 +50,50 @@ p{
   src: url(./fonts/BebasNeue_Bold.otf);
 }
 
+@font-face {
+  font-family: SourceSansPro;
+  src: url(./fonts/SourceSansPro-Regular.ttf);
+}
+
+p.body, ul {
+  color: white;
+  font-family: SourceSansPro;
+  font-size: 14px;
+  letter-spacing: 5px;
+  line-spacing: 0.5em;
+  margin-left: 50px;
+  text-transform: none;
+  text-align: left;
+}
+
+ul {
+  padding-left: 20px;
+}
+
 .header-container {
-  background-color: #1E1E1E;
   width: 100%;
   height: 60px;
-  padding: 0;
-  margin: 0;
+  background-color: #121212;
+  z-index: 10;
+  position: fixed;
+  top: 0;
 }
 
 .header {
-  padding-top: 10px;
+  width: 100%;
+  height: 60px;
+  padding-top: 0;
   padding-right: 20px;
-  padding-bottom: 10px;
+  padding-bottom: 0;
   padding-left: 20px;
   display: flex;
   justify-content: space-between;
   max-width: 1340px;
-  vertical-align: baseline;
   margin: auto;
+  background-color: #121212;
 }
 
 .header-nav {
-  position: relative;
   display: flex;
   flex-direction: row;
   float: right;
@@ -49,7 +105,11 @@ p{
 
 .logo-container {
   width: 125px;
-  height: 100%;
+  height: 40px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 50px;
+  margin-right: 0;
   float: left;
 }
 
@@ -84,7 +144,6 @@ p{
   position: relative;
   color: #ffffff;
   text-decoration: none;
-  text-transform: uppercase;
   border-bottom-width: 2px;
   border-bottom-style: solid;
   border-bottom-color: transparent;
@@ -93,6 +152,8 @@ p{
 }
 
 .body-container {
+  background-color: #121212;
+  margin-top: 60px;
 }
 
 .banner-container {
@@ -106,31 +167,28 @@ p{
   padding: 0;
   vertical-align: baseline;
   box-sizing: border-box;
+  z-index: 1;
 }
 
 .banner-text-container {
   position: relative;
   width: 100%;
-  color: #ffffff;
   vertical-align: baseline;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-
+  max-width: 1340px;
+  margin: auto;
 }
 
 .banner-text {
-  font-family: BebasNeueBook;
-  font-size: 80px;
-  letter-spacing: 15px;
-  margin-left: 50px;
+
 }
 
 .banner-img {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  background-color: #1E1E1E;
   position: absolute;
   top: 0;
   right: 0;
@@ -149,28 +207,24 @@ p{
   height: 80vh;
   max-height: 700px;
   border: 0;
-  margin: 0;
+  margin: auto;
   padding-top: 100px;
   padding-left: 0;
   padding-right: 0;
   padding-bottom: 0;
   vertical-align: baseline;
   box-sizing: border-box;
-  background-color: #1E1E1E;
+  max-width: 1340px;
 }
 
 .culture-text-container {
   float: left;
-  color: #ffffff;
-  width: 50%;
+  width: 60%;
   height: 100%;
 }
 
 .culture-text {
-  font-family: BebasNeueBook;
-  font-size: 80px;
-  letter-spacing: 15px;
-  margin-left: 50px;
+
 }
 
 .culture-image-container {
@@ -178,8 +232,150 @@ p{
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
-  background-color: #1E1E1E;
+  height: 100%;
+  width: 640px;
+  display: block;
+}
+
+.people-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  height: 80vh;
+  max-height: 700px;
+  border: 0;
+  margin: auto;
+  padding-top: 100px;
+  padding-left: 0;
+  padding-right: 0;
+  padding-bottom: 0;
+  vertical-align: baseline;
+  box-sizing: border-box;
+  max-width: 1340px;
+}
+
+.people-text-container {
+  float: right;
+  width: 60%;
+  height: 100%;
+  text-align: right;
+}
+
+.people-image-container {
+  float: left;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 100%;
+  width: 640px;
+  display: block;
+}
+
+
+.communities-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  height: 80vh;
+  max-height: 700px;
+  border: 0;
+  margin: auto;
+  padding-top: 100px;
+  padding-left: 0;
+  padding-right: 0;
+  padding-bottom: 0;
+  vertical-align: baseline;
+  box-sizing: border-box;
+  max-width: 1340px;
+}
+
+.communities-text-container {
+  float: left;
+  width: 60%;
+  height: 100%;
+}
+
+.communities-image-container {
+  float: right;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
   height: 100%;
   width: 40%;
   display: block;
+}
+
+.related-content-container {
+  position: relative;
+  display: block;
+  height: 80vh;
+  max-height: 700px;
+  border: 0;
+  margin: auto;
+  padding-top: 100px;
+  padding-left: 0;
+  padding-right: 0;
+  padding-bottom: 0;
+  vertical-align: baseline;
+  box-sizing: border-box;
+  max-width: 1340px;
+}
+
+.line-break-container {
+  width: 100%;
+  height: 2em;
+  max-width: 1340px;
+  margin-top: 0;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 40px;
+  padding-right: 40px;
+  align-items: center;
+  top: 0;
+}
+
+.related-content-text {
+  padding: 0;
+  margin: 0;
+}
+
+h4.related-content-text::after {
+  content: "";
+  position: absolute;
+  top: 114px;
+  left: 325px;
+  width: 1500px;
+  border-top-width: 1px;
+  border-top-style: solid;
+  border-top-color: #808285;
+}
+
+.related-pictures-container {
+  bottom: 0;
+  width: 95%;
+  height: 100%;
+  margin: auto;
+
+}
+
+.left-related-content {
+  box-sizing: border-box;
+  float: left;
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 100%;
+  width: 49%;
+  margin-top: 20px;
+}
+
+.right-related-content {
+  box-sizing: border-box;
+  float: right;
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 100%;
+  width: 49%;
+  margin-top: 20px;
 }
